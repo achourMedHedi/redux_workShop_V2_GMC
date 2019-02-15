@@ -5,7 +5,7 @@ import {Zid  , NA9ES} from './actions/ExperienceActions'
 import {connect} from 'react-redux'
 import Receive from './Receive'
 
-class App extends Component {
+class App2 extends Component {
 
   state = {
     nb : 0
@@ -17,6 +17,7 @@ class App extends Component {
         <header className="App-header">
         <button onClick={()=> this.props.Zid()} >Ziiid</button>
         <button onClick={()=> this.props.NA9ES(20)} >na9es</button>
+
         <button onClick={()=> this.setState({nb:this.state.nb+1}) } >zeyda</button>
 
         <Receive nb={this.state.nb} />
@@ -37,5 +38,5 @@ const mapDispatchToProps = {
   NA9ES
 }
 
-export default connect(mapStateToProps , mapDispatchToProps)(App)
+export default connect(mapStateToProps , mapDispatchToProps)(App2)
 

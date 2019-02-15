@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import Experience from './Experience'
+import Points from './Points'
 
 export default combineReducers ({
-    Experience
+    Points
 })
